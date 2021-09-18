@@ -125,7 +125,7 @@ def check(ownphone,userInfo,token):
             "templateid": "pneumonia",
             "token": token
         },
-            "method": "getUpDataInfoDetail"
+            "method": "userComeApp"
     }      
     response = requests.post(sign_url, json=post_json).json()
     data = json.loads(response['data'])
